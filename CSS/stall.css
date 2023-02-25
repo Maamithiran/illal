@@ -126,6 +126,27 @@ margin-bottom: 2%;
     font-weight: bold;
 }
 
+#cont_1 .right button
+{
+    background-color: darkmagenta;
+    border: 0;
+    margin: 4% 25% 4% 0%;
+    width: 95%;
+    height: 60px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 24px;
+}
+
+#cont_1 .right button:hover
+{
+    background-color: rgb(173, 0, 173);
+    height: 66px;
+    width: 100%;   
+    transition: 0.5s ease-in-out; 
+}
+
 #stall_type
 {
     max-width: 60%;
@@ -191,15 +212,21 @@ margin-bottom: 2%;
    
 }
 
-#categories
+#foter
 {
     max-width: 90%;
-    margin: 2% 5%;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-#categories h5
+.categories
 {
-    margin-left: 20%; 
+    max-width: 100%;
+    margin: 2% 20%;
+}
+
+.categories h5
+{
+    margin-left: 0%; 
 }
 
