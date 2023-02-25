@@ -5,6 +5,7 @@
 *
 {
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 body
@@ -69,7 +70,7 @@ body
 
 .bg
 {
-    background-color: rgb(255, 184, 255);
+    background-color: rgb(255, 255, 255);
     margin-top: 10%;
     width: 90%; 
     margin-left: 5%;
@@ -131,7 +132,7 @@ margin-bottom: 2%;
     background-color: darkmagenta;
     border: 0;
     margin: 4% 25% 4% 0%;
-    width: 95%;
+    width: 98%;
     height: 60px;
     border-radius: 10px;
     color: #ffffff;
