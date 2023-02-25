@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@700&family=Open+Sans:wght@300&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Shrikhand&family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@700&family=Open+Sans:wght@300&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Shrikhand&family=Sofia+Sans&display=swap');
+
+*
+{
+    max-width: 100%;
+}
+
+body
+{
+	width: 100%;
+    background-image: url("../img/bg4.jpeg");
+    /*background-color: #510079;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#cont_0
+{
+    display: block;
+    position: fixed;
+    z-index: 999;
+    min-width: 100%;  
+}
+
+.menu
+{  
+    height: 2cm;
+    background-color: #ffffff !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1%;
+}
+
+.logo img
+{
+    margin-left: 15%;
+    height: 75px;
+}
+
+.menu a
+{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    color: #a53692;
+    border: 5px  transparent;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.menu a:hover
+{
+    text-decoration: none;
+    padding: 5px 20px;
+    color: rgb(253, 240, 255);
+    background-color: #a53692;
+    transition: 0.5s ease;
+}
+
+.vl
+{
+    border-left: 3px solid #a53692;
+    height: 40px;
+}
+
+#cont_1
+{
+    display: flex;
+}
+
+.left_cont
+{
+    max-width: 60%;
+    margin: 10% 0% 0% 2%;
+}
+
+.left_cont h1
+{
+    color: #fff;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+}
+
+.left_cont h2
+{
+    color: purple;
+    text-align: left;
+    font-size: 200%;
+}
+
+.left_cont img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.left_cont p
+{
+    color: #fff;
+    text-align: justify;
+    font-size: larger;
+    line-height: 100%;
+
+}
+
+.left_cont h3
+{
+    color: yellow;
+    text-align: center;
+}
+
+.left_cont a
+{
+    all: revert;
+}
+
+.left_cont button
+{
+    margin: 5% 0% 0% 15%;
+    background-color: #a53692;
+    width: 70%;
+    height: 15%;
+    border: 4px double #cccccc;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+  -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+}
+
+.left_cont button:hover 
+{
+    background-color: rgb(118, 0, 165);
+}
+
+.right_cont
+{
+    margin-top: 7%;
+}
+
+.right_cont .bday
+{
+    max-width: 100%;
+    max-height: 300px;
+    margin: 5% 5% 5% 0%;
+}
+
+.right_cont .bday img
+{
+    width: 100%;
+    height: 250px;
+}
+
+.carousel
+{
+    max-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    margin: 5% 5% 5% 0%;
+}
+
+.carousel-inner img {
+    min-width: 90%;
+    min-height: 300px;
+    max-height: 300px;
+    margin-left: 0%;
+}
+
+#demo
+{
+    padding: 0cm 0cm 1cm 0cm;
+    max-height: 50%;
+}
+
+.cont_2
+{
+    max-width: 100%;    
+    display: flex;
+    margin: 3% 0% 0% 0%;
+}
+
+.tele
+{
+    max-width: 50%;
+    display: flex;
+}
+
+#tele_cont
+{
+    background-color: #ffffff;
+    border-radius: 20px 0px 0px 20px;
+    height: 450px;
+    width: 35%;
+    margin: 10% 0% 0% 10%;
+}
+
+#tele_cont img
+{
+    margin-top: 10%;
+    padding: 2% 0% 0% 20%;
+    height: 60px;
+}
+
+#tele_cont p
+{
+    line-height: 125%;
+    color: #510079;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10% 20% 4% 20%;
+}
+
+#tele_img
+{
+    padding: 40px 5% 0% 0%;
+}
+
+#tele_img img
+{
+    border-radius: 20px;
+    height: 500px;
+    width: 300px
+}
+
+.varthagi
+{
+    display: flex;
+}
+
+.cont_2 .varthagi #coming_soon
+{
+    background-color: #ffffff;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#coming_soon
+{
+    
+    text-align: center;
+    color: #510079;
+    height: 450px;
+    width: 60%;
+    margin: 10% 0% 0% 0%;
+}
+
+#coming_soon h1
+{
+    font-size: 40pt;
+    font-weight: bolder;
+    padding-top: 5%;
+}
+
+#coming_soon h3
+{
+    font-size: 20pt;
+    font-weight: bolder;
+    padding: 0% 0% 0% 5%;
+}
+
+#coming_soon img
+{
+    width: 180px;
+    height: 180px;
+}
+
+.varthagi #varthagi-logo
+{
+    background-color: #f9e0ff;
+    border-radius: 20px;
+    height: 500px;
+    margin: 40px 5% 0% 0%;
+
+}
+
+#varthagi-logo img
+{
+    margin-top: 25%;
+}
+
+.cont_3
+{
+    max-width: 100%;
+    display: flex;
+}
+
+#counselling
+{
+    width: 25%;
+    background-color: #a53692;
+    border-radius: 10%;
+    margin: 7% 0% 0% 6%;
+}
+
+#counselling img
+{
+    height: 35%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 10% 0% 0% 25%;
+}
+
+#counselling p
+{
+    margin: 10% 10% 0% 10%;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 15%;
+    line-height: 200%;
+}
+
+#tour
+{
+    width: 25%;
+    background-color: #a53692;
+    border-radius: 10%;
+    margin: 7% 0% 0% 6%;
+}
+
+#tour img
+{
+    height: 35%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 10% 0% 0% 25%;
+}
+
+#tour p
+{
+    margin: 10% 10% 0% 10%;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 10%;
+    line-height: 200%;
+}
+
+#tour h3
+{
+    margin: 0% 10% 0% 10%;
+    color: yellow;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 4%;
+    line-height: 200%;
+}
+
+
+#donation
+{
+    width: 25%;
+    background-color: #a53692;
+    border-radius: 10%;
+    margin: 7% 0% 0% 6%;
+}
+
+#donation img
+{
+    height: 35%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 10% 0% 0% 25%;
+}
+
+#donation p
+{
+    margin: 10% 10% 0% 10%;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    line-height: 200%;
+}
+
+#regnn p
+{
+    color: black;
+}
+
+.cont_4
+{
+    max-width: 100%;
+    margin-top: 10%;
+    background-color: #ffffff;
+}
+
+.cont_4 h2
+{
+    color: #4e4e4e;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 335%;
+    padding: 2% 0% 2% 0%;
+}
+
+.cont_4 #roller
+{
+
+padding-top: 0%;
+}
+
+.cont_4 #roller img
+{
+    height: 100px;
+    padding-right: 10%;
+}
+
+.cont_4 #sponsorship
+{
+    width: 100%;
+    margin-top: 0%;
+}
+
+#sponsorship h1
+{
+    text-align: center;
+    padding-top: 3%;
+    font-family: 'PT Serif', serif;
+}
+
+#sponsorship button
+{
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color:#4e4e4e;
+    font-weight: 700;
+    background-color: #a8a8a8;
+    border-style: none;
+    border-radius: 10px;
+    margin: 5% 0% 3% 40%;
+    height: 50px;
+    width: 20%;
+}
+
+#sponsorship button:hover
+{
+    height: 60px;
+    width: 24%;
+    color:#313131;
+    background-color: #7e7e7e;
+    transition: 0.75s ease-in-out;
+}
+
+.cont_4 hr
+{
+    border: 1px solid #707070;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+}
+
+#footer
+{
+    padding-bottom: 3%;
+}
+
+#footer_cont{
+    width: 80%; 
+    margin: 2% 10% 0% 10%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#address img
+{
+    height: 50px;
+}
+
+#address i
+{
+    padding-right: 5%;
+}
+
+
+#footer_cont .footer_logo img
+{
+    height: 100px;
+    margin: 5% 0% 5% 0%;
+    
+}

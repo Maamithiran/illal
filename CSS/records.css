@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@700&family=Open+Sans:wght@300&family=Oswald:wght@600&family=PT+Serif:wght@700&family=Shrikhand&family=Sofia+Sans&display=swap');
+
+*
+{
+    max-width: 100%;
+}
+
+body
+{
+	width: 100%;
+    background-image: url("../img/bg4.jpeg");
+    /*background-color: #510079;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#cont_0
+{
+    display: block;
+    position: fixed;
+    z-index: 999;
+    min-width: 100%;  
+}
+
+.menu
+{  
+    height: 2cm;
+    background-color: #ffffff !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1%;
+}
+
+.logo img
+{
+    margin-left: 15%;
+    height: 75px;
+}
+
+.menu a
+{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    color: #a53692;
+    border: 5px  transparent;
+    border-radius: 10px;
+    transition: 0.6s ease;
+}
+
+.menu a:hover
+{
+    text-decoration: none;
+    padding: 5px 20px;
+    color: rgb(253, 240, 255);
+    background-color: #a53692;
+    transition: 0.5s ease;
+}
+
+.vl
+{
+    border-left: 3px solid #a53692;
+    height: 40px;
+}
+
+h1
+{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 10%;
+    text-align: center;
+    color: #d9ff00;
+}
+
+#page
+{
+    max-width: 90%;
+    margin: 2% 5% 0% 5%;
+    background-color: rgb(216, 207, 255);
+    border-radius: 10px;
+}
+
+#page #yoga_record
+{
+    max-width: 90%;
+    margin: 0% 5% 0% 5%;
+}
+
+#page #yoga_record h1
+{
+    padding-top: 3%;
+    color: #818181;
+    padding-bottom: 2%;
+}
+
+#page #yoga_record h6
+{
+    color: #494949;
+    font-weight: bold;
+}
+
+hr
+{
+    max-width: 90%;
+    margin: 5% 5% 0% 5%;
+    color:#494949;
+}
+
+#music_marathon
+{
+    max-width: 90%;
+    margin: 3% 5% 0% 5%;
+    display: flex;
+}
+
+#music_heading h1
+{
+    padding-top: 2%;
+    text-align: center;
+    color: #818181;;
+}
+
+#music_marathon .left
+{
+    max-width: 40%;
+    margin-left: 5%;
+    display: block;
+}
+
+.left #num
+{
+    color: #ff00d4;
+    font-size: 80px ;
+}
+
+.left #by
+{
+    color: #ae00ff;
+    font-size: 100px;
+    padding: 0;
+}
+
+.left #ladies
+{
+    color: #ff00d4;
+    font-size: 80px;
+}
+
+#music_marathon .right
+{
+    max-width: 100%;
+    margin-top: 5%;
+}
+
+#music_marathon .right img
+{
+    width: 100%;
+    height: 500px;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    font-family: 'Oswald', sans-serif;;
+    font-weight: bolder;
+    font-size: 75px;
+    color: #ae00ff;
+}
+
+#join 
+{
+    position: relative;
+}
+
+#join button
+{
+    margin: 5% 0% 5% 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    border: 0px;
+    border-radius: 10px;
+    height: auto;
+    color:#ffffff;
+    background-color: #a53692;  
+    font-family: 'Oswald', sans-serif;;
+    padding: 15px;
+}
+
+#foot h2
+{
+    margin: 15% 0% 0% 0%;
+    padding-bottom: 0%;
+}
+
+#singers
+{
+    margin: 3% 5% 0% 5%;
+}
+
+#singers .row .col-sm-3 img
+{
+    width: 100%;
+    border: 5px solid #494949;
+}
+
+#singers .row .col-sm-3 button
+{
+    border: 0;
+    width: 100%;
+    background-color: #494949;
+    color:#ffffff;
+    height: 40px;
+}
+
+#singers .row .col-sm-3 img:hover
+{
+    width: 105%;
+    border: 8px solid #353535;
+}
+
+#singers .row .col-sm-3 button:hover
+{
+    border: 0;
+    width: 105%;
+    background-color: #353535;
+    color:#ffffff;
+    height: 40px;
+}
+
+
+
