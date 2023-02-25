@@ -133,6 +133,22 @@ body
     margin: 10% 0% 0% 5%;
 }
 
+.comp_cont .regn #btn
+{
+    border: 0;
+    border-radius: 10px;
+    color: grey;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.comp_cont .regn #btn:hover
+{
+    background-color: #5c5c5c;
+    transition: 0.5s ease-in-out;
+}
+
 .comp
 {
     padding: 5% 0% 0% 0%;
