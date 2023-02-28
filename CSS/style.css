@@ -4,67 +4,111 @@
 
 *
 {
-    max-width: 100%;
+max-width: 100%;
 }
 
 body
 {
-	width: 100%;
-    background-image: url("../img/bg4.jpeg");
-    /*background-color: #510079;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+width: 100%;
+background-image: url("../img/bg1.jpg");
+/*background-color: #510079;*/
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
 
-#cont_0
+
+
+.navbar-expand-lg
 {
-    display: block;
-    position: fixed;
-    z-index: 999;
-    min-width: 100%;  
+background-color: white;
+display: flex;
+justify-content: space-between;
 }
 
-.menu
-{  
-    height: 2cm;
-    background-color: #ffffff !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 1%;
-}
-
-.logo img
+.navbar-expand-lg .navbar-brand img
 {
-    margin-left: 15%;
-    height: 75px;
+height: 75px;
 }
 
-.menu a
+.vl 
 {
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: x-large;
-    color: #a53692;
-    border: 5px  transparent;
-    border-radius: 10px;
-    transition: 0.6s ease;
+border-left: 3px solid #a53692;
+height: 40px;
+margin-top: 7px;
+margin: 5px 20px;
 }
 
-.menu a:hover
+
+.navbar-expand-lg .container-fluid 
 {
-    text-decoration: none;
-    padding: 5px 20px;
-    color: rgb(253, 240, 255);
-    background-color: #a53692;
-    transition: 0.5s ease;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 1%;
+height: 2cm;
 }
 
-.vl
+.navbar-light .navbar-nav .nav-link
 {
-    border-left: 3px solid #a53692;
-    height: 40px;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 100px)
+{
+
+.navbar-expand-lg
+{
+background-color: white;
+
+}
+
+.navbar-expand-lg .navbar-collapse
+{    
+background-color: #f6c9fa;   
+padding-left: 4%;
+}
+
+.vl 
+{
+display: none;
+}
+
+
+.navbar-light .navbar-nav .nav-link
+{
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
+}   
 }
 
 #cont_1
@@ -90,6 +134,7 @@ body
     color: purple;
     text-align: left;
     font-size: 200%;
+    font-family: 'Shrikhand', cursive;
 }
 
 .left_cont img
@@ -170,12 +215,6 @@ body
     min-height: 300px;
     max-height: 300px;
     margin-left: 0%;
-}
-
-#demo
-{
-    padding: 0cm 0cm 1cm 0cm;
-    max-height: 50%;
 }
 
 .cont_2
@@ -386,6 +425,11 @@ body
     color: black;
 }
 
+.profile #blink
+{
+    text-align: center; color: red; margin-top: 3%;
+}
+
 .cont_4
 {
     max-width: 100%;
@@ -487,4 +531,443 @@ padding-top: 0%;
     height: 100px;
     margin: 5% 0% 5% 0%;
     
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 100px)
+{
+
+#cont_1
+{
+    display: block;
+    width: 100%;
+}
+
+.left_cont
+{
+    max-width: 100%;
+    margin: 10% 0% 0% 7%;
+}
+
+.left_cont h1
+{
+    color: #fff;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+}
+
+.left_cont h2
+{
+    color: purple;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Shrikhand', cursive;
+}
+
+.left_cont img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.left_cont p
+{
+    color: #fff;
+    text-align: justify;
+    font-size: larger;
+    line-height: 100%;
+
+}
+
+.left_cont h3
+{
+    color: yellow;
+    text-align: center;
+}
+
+.left_cont a
+{
+    all: revert;
+}
+
+.left_cont button
+{
+    margin: 5% 0% 0% 15%;
+    background-color: #a53692;
+    width: 70%;
+    height: 15%;
+    border: 4px double #cccccc;
+    border-radius: 10px;
+    font-size: 28px;
+    cursor: pointer;
+  -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+}
+
+.left_cont button:hover 
+{
+    background-color: rgb(118, 0, 165);
+}
+
+.right_cont
+{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.right_cont .bday
+{
+    max-width: 100%;
+    max-height: 200px;
+    margin: 5% 5% 5% 0%;
+}
+
+.right_cont .bday img
+{
+    width: 100%;
+    height: 200px;
+}
+
+.carousel
+{
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    margin: 5% 5% 5% 0%;
+}
+
+.carousel-inner img {
+    min-width: 90%;
+    min-height: 200px;
+    max-height: 200px;
+    margin-left: 0%;
+}
+
+.cont_2
+{
+    max-width: 100%;    
+    display: block;
+    margin: 3% 0% 0% 0%;
+}
+
+.tele
+{
+    max-width: 100%;
+    display: flex;
+}
+
+#tele_cont
+{
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 450px;
+    width: 100%;
+    margin: 15% 0% 0% 5%;
+}
+
+#tele_cont img
+{
+    margin-top: 5%;
+    padding: 2% 10% 0% 20%;
+    height: 60px;
+}
+
+#tele_cont p
+{
+    
+    color: #510079;
+    
+    
+    text-align: center;
+    padding: 10% 20% 4% 20%;
+}
+
+
+#tele_img img
+{
+    border-radius: 0px 20px 20px 0px;
+    height: 300px;
+    width: 100%;
+    margin-top: 80%;
+}
+
+.varthagi
+{
+    display: flex;
+}
+
+.cont_2 .varthagi #coming_soon
+{
+    background-color: #ffffff;
+    margin-left: 5%;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#coming_soon
+{
+    
+    text-align: center;
+    color: #510079;
+    height: 450px;
+    width: 60%;
+    margin: 15% 0% 0% 0%;
+    padding: 0 10px;
+}
+
+#coming_soon h1
+{
+    font-size: 40pt;
+    font-weight: bolder;
+    padding-top: 5%;
+}
+
+#coming_soon h3
+{
+    font-size: 20pt;
+    font-weight: bolder;
+    padding: 0% 0% 0% 5%;
+}
+
+#coming_soon img
+{
+    width: 180px;
+    height: 180px;
+}
+
+.varthagi #varthagi-logo
+{
+    background-color: #f9e0ff;
+    border-radius: 0px 20px 20px 0px;
+    height: 200px;
+    margin: 47% 5% 0% 0%;
+
+
+}
+
+#varthagi-logo img
+{
+    margin-top: 25%;
+}
+
+.cont_3
+{
+    max-width: 100%;
+    display: block;
+    margin-top: 15%;
+}
+
+#counselling
+{
+    width: 90%;
+    background-color: #a53692;
+    border-radius: 10%;
+    margin: 10% 5% 0% 5%;
+}
+
+#counselling img
+{
+    height: 35%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 10% 0% 0% 25%;
+}
+
+#counselling p
+{
+    margin: 10% 10% 0% 10%;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 15%;
+    line-height: 200%;
+}
+
+#tour
+{
+    width: 90%;
+    background-color: #a53692;
+    border-radius: 10%;
+    margin: 10% 5% 0% 5%;
+}
+
+#tour img
+{
+    height: 35%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 10% 0% 0% 25%;
+}
+
+#tour p
+{
+    margin: 10% 10% 0% 10%;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 10%;
+    line-height: 200%;
+}
+
+#tour h3
+{
+    margin: 0% 10% 0% 10%;
+    color: yellow;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 4%;
+    line-height: 200%;
+}
+
+
+#donation
+{
+    width: 90%;
+    background-color: #a53692;
+    border-radius: 10%;
+    margin: 10% 5% 0% 5%;
+}
+
+#donation img
+{
+    height: 35%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 50%; 
+    margin: 10% 0% 0% 25%;
+}
+
+#donation p
+{
+    margin: 3% 10% 0% 10%;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    line-height: 200%;
+}
+
+#regnn p
+{
+    color: black;
+}
+
+.profile #blink
+{
+    margin-top: 10%;
+}
+
+.cont_4
+{
+    max-width: 100%;
+    margin-top: 10%;
+    background-color: #ffffff;
+}
+
+.cont_4 h2
+{
+    color: #4e4e4e;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 335%;
+    padding: 2% 0% 5% 0%;
+}
+
+.cont_4 #roller
+{
+
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+.cont_4 #roller img
+{
+    height: 100px;
+    padding-right: 10%;
+}
+
+.cont_4 #sponsorship
+{
+    width: 100%;
+    margin-top: 0%;
+}
+
+#sponsorship h1
+{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'PT Serif', serif;
+}
+
+#sponsorship button
+{
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color:#4e4e4e;
+    font-weight: 700;
+    background-color: #a8a8a8;
+    border-style: none;
+    border-radius: 10px;
+    margin: 5% 0% 10% 30%;
+    height: 50px;
+    width: 40%;
+}
+
+#sponsorship button:hover
+{
+    height: 60px;
+    width: 24%;
+    color:#313131;
+    background-color: #7e7e7e;
+    transition: 0.75s ease-in-out;
+}
+
+.cont_4 hr
+{
+    border: 1px solid #707070;
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+}
+
+#footer
+{
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
+
+#footer_cont{
+    width: 80%; 
+    margin: 2% 10% 0% 10%;
+    display: block;
+    justify-content: space-between;
+    
+}
+
+#address img
+{
+    height: 50px;
+}
+
+#address i
+{
+    padding-right: 5%;
+    margin-left: 5%;
+}
+
+
+#footer_cont .footer_logo img
+{
+    height: 100px;
+    margin: 8% 0% 5% 10%;
+    
+}
+
 }

@@ -25,14 +25,16 @@
 </script>
 
 <script>
-    function showAlert() {
+    function showAlert(sub) {
+        if(!document.sub.agree.checked){
+                alert("Check the button")
+                return false
+            }
     var myText = "This can be whatever text you like!";
     alert (myText);
   }
   </script>
-</head>
-<body>
-    <script>
+  <script>
         function validate(formID)
         {
             if(!document.formID.agree.checked){
@@ -42,6 +44,8 @@
             return true
         }
         </script>
+</head>
+<body>
 	<h1 id="msg"></h1>
 <div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
 <div class="container-contact3">
@@ -101,7 +105,7 @@ Music Marathon Form-Anirudh Songs
 Artistic comp consists of presentation of various asanas (postures) including forward and backward bending, balancing, lying postures, sitting postures, etc. performed with music.<br></option>
 </select>
 <input type="checkbox" name="agree" id="chk" onclick="enable()" value="yes">Check this box to Agree our Terms and Conditions<br><br>
-<button disabled="true" class="contact3-form-btn" id="sub" value="Submit">
+<button onclick="showAlert()" disabled="true" class="contact3-form-btn" id="sub" value="Submit">
 Submit
 </button>
 
