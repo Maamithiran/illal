@@ -16,50 +16,117 @@ body
     background-attachment: fixed;
 }
 
-.menu
+.navbar-expand-lg
 {
-    position: fixed;
-    z-index: 999;
-    width: 100%;   
-    height: 2cm;
-    background-color: #ffffff !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 1%;
+background-color: white;
+display: flex;
+justify-content: space-between;
 }
 
-.logo img
+.navbar-expand-lg .navbar-brand img
 {
-    margin-left: 15%;
-    height: 75px;
+height: 75px;
 }
 
-.menu a
-{
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: x-large;
-    color: #a53692;
-    border: 5px  transparent;
-    border-radius: 10px;
-    transition: 0.6s ease;
+.navbar-expand-lg .navbar-collapse .nav-item
+{    
+    margin-top: 1%;
 }
 
-.menu a:hover
+.vl 
 {
-    text-decoration: none;
-    padding: 5px 20px;
-    color: rgb(253, 240, 255);
-    background-color: #a53692;
-    transition: 0.5s ease;
+border-left: 3px solid #a53692;
+height: 50px;
+margin-top: 0px;
+margin: 0px 20px;
 }
 
-.vl
+
+.navbar-expand-lg .container-fluid 
 {
-    border-left: 3px solid #a53692;
-    height: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 1%;
+height: 2cm;
 }
+
+.navbar-light .navbar-nav .nav-link
+{
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+text-decoration: none;
+padding: 25px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 100px)
+{
+
+.navbar-expand-lg
+{
+background-color: white;
+
+}
+
+.navbar-expand-lg .navbar-collapse
+{    
+
+background-color: #f6c9fa;   
+padding-left: 1%;
+padding-bottom: 3%;
+}
+
+.navbar-expand-lg .navbar-collapse .nav-item
+{
+    padding-top: 3%;
+    
+}
+
+.vl 
+{
+display: none;
+}
+
+
+.navbar-light .navbar-nav .nav-link
+{
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
+}  
+
+
+
+
+}
+
+
+/*MAIN CSS*/
 
 .comp_head
 {
@@ -300,3 +367,251 @@ ul
     color:rgb(102, 102, 102);
 }
 
+
+/*MOBILE VIEW*/
+
+
+@media only screen and (max-width: 768px) and (min-width: 100px)
+{
+    .comp_head
+{
+    max-width: 100%;
+}
+
+.comp_head h2
+{
+    color: #747272;
+    padding-top: 20%;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    font-size:xx-large;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.comp_head h2:hover
+{
+    color: #5c5c5c;
+    font-size: 25pt;
+    transition: 0.5s ease;
+}
+
+.comp_head h3
+{
+    color: #747272;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.comp_head h3:hover
+{
+    color: #5c5c5c;
+    font-size: 23pt;
+    transition: 0.5s ease;
+}
+
+.comp_head h4
+{
+    color: #747272;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.comp_head h4:hover
+{
+    color: #5c5c5c;
+    font-size: 19pt;
+    transition: 0.5s ease;
+}
+
+.comp_cont
+{
+    max-width: 90%;
+    background-color: #ffffff;
+    margin: 0% 5% 0% 5%;
+    border-radius: 15px;
+}
+
+.comp_cont h2
+{
+    color:rgb(102, 102, 102);
+    padding: 4% 0% 0% 4%;
+}
+
+.comp_cont hr
+{
+    width: 90%;
+    margin: 10% 0% 0% 5%;
+}
+
+.comp_cont .regn
+{
+    width: 90%;
+    margin: 3% 5%;
+    display: block;
+    
+}
+.comp_cont .regn #btn
+{
+    border: 0;
+    border-radius: 10px;
+    color: grey;
+    padding: 5px;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+.comp_cont .regn #btn:hover
+{
+    background-color: #5c5c5c;
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+.comp
+{
+    padding: 5% 0% 0% 0%;
+    display: block;
+    
+}
+
+#comp_prof
+{
+    height: 320px;
+    width: 320px;
+    margin: 0% 0% 0% 10%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #9e9e9e;  
+}
+
+#comp_prof #btn
+{
+    width: 100%;
+    height: 50px;
+    background-color: #9e9e9e;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+
+    color: #ffffff;
+}
+
+#comp_prof:hover
+{
+    height: 324px;
+    width: 324px;
+    transition: 0.5s ease-in-out;
+}
+
+.flip-card 
+{
+width: 100%;
+height: 100%;
+margin: 0% 0% 0% 0%;
+}
+
+.flip-card:hover
+{
+height: 100%;
+width: 100%;
+transition: 0.5s ease-in-out;
+}
+
+#comp_prof:hover .flip-card
+{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    margin: 0% 0% 0% 0%;
+}
+
+.flip-card img
+{
+height: 100%;
+width: 100%;
+border-radius: 5px;
+}
+
+.flip-card-inner 
+{
+width: 96%;
+height: 96%;
+transition: transform 0.6s ease-in-out;
+transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner 
+{
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back 
+{
+position: absolute;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.flip-card-front 
+{
+    width: 100%;
+    height: 100%;
+    margin: 2% 0% 0% 2%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back 
+{
+    width: 96%;
+    height: 96%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin: 4% 0% 0% 0%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f3f3f3;;
+    color: rgb(102, 102, 102);
+    transform: rotateY(180deg);
+    transition: 2s ease-in-out;
+}
+
+.flip-card-back h2
+{
+margin: 0% 0% 0% 5%;
+text-align: left;
+}
+
+#comp_rules
+{
+    max-width: 90%;
+    padding: 15% 5% 0% 6%;
+}
+
+ul
+{
+    margin: 0px 0px 0px 32px;
+    line-height: 1.5pt;
+}
+
+.b1
+{
+    list-style-image: url(../img/bullet_logo.png);
+}
+
+#comp_rules h6
+{
+    line-height: 175%;
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(102, 102, 102);
+}
+
+#comp_rules h2
+{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(102, 102, 102);
+}
+
+}
