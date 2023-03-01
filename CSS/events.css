@@ -26,14 +26,20 @@ justify-content: space-between;
 .navbar-expand-lg .navbar-brand img
 {
 height: 75px;
+
+}
+
+.navbar-expand-lg .navbar-collapse .nav-item
+{    
+    margin-top: 0%;
 }
 
 .vl 
 {
 border-left: 3px solid #a53692;
-height: 40px;
-margin-top: 7px;
-margin: 5px 20px;
+height: 50px;
+margin-top: 0px;
+margin: 0px 20px;
 }
 
 
@@ -66,61 +72,8 @@ background-color: #a53692;
 transition: 0.5s ease;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 100px)
-{
-
-.navbar-expand-lg
-{
-background-color: white;
-display: flex;
-justify-content: space-between;
-
-}
-
-.navbar-expand-lg .container-fluid
-{
-    display: flex!important;
-    justify-content: space-between!important;
-    align-items: end;
-}
-
-.navbar-expand-lg .navbar-collapse
-{    
-background-color: #f6c9fa;   
-padding-left: 4%;
-padding-left: 5%;
-}
-
-.vl 
-{
-display: none;
-}
 
 
-.navbar-light .navbar-nav .nav-link
-{
-text-decoration: none;
-font-family: 'Oswald', sans-serif;
-font-size: x-large;
-color: #a53692;
-border: 5px  transparent;
-border-radius: 10px;
-transition: 0.6s ease;
-}
-
-.navbar-light .navbar-nav .nav-link:hover
-{
-text-decoration: none;
-padding: 5px 25px;
-color: rgb(253, 240, 255);
-background-color: #a53692;
-transition: 0.5s ease;
-}  
-
-
-
-
-}
 
 
 .tabs 
@@ -421,6 +374,76 @@ button
 
 
 /*MOBILE*/
+
+@media only screen and (max-width: 768px) and (min-width: 100px)
+{
+
+.navbar-expand-lg
+{
+background-color: white;
+}
+
+.navbar-expand-lg .navbar-brand img
+{
+height: 75px;
+padding-bottom: 5%;
+}
+
+.navbar-expand-lg .container-fluid
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-toggler
+{
+    width: 20%;
+}
+
+.navbar-expand-lg .navbar-collapse
+{    
+
+background-color: #f6c9fa;   
+padding-left: 1%;
+padding-bottom: 3%;
+}
+
+.navbar-expand-lg .navbar-collapse .nav-item
+{
+    padding-top: 3%;
+    
+}
+
+.vl 
+{
+display: none;
+}
+
+
+.navbar-light .navbar-nav .nav-link
+{
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
+}  
+
+
+
+
+}
 
 @media only screen and (max-width: 1024px) and (min-width: 100px)
 {
