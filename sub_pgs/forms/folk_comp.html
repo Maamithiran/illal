@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Drawing Competition-Registration Form</title>
+<title>Folk Dance Competition-Registration Form</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +35,7 @@
 <div class="wrap-contact3">
 <form class="contact3-form validate-form">
 <span class="contact3-form-title">
-Drawing Competition Registration Form
+Folk Dance Competition Registration Form
 </span>
 
 <div class="wrap-input3 validate-input" data-validate="Name is required">
@@ -69,14 +69,7 @@ Drawing Competition Registration Form
 <div class="wrap-input3 validate-input" data-validate="Aadhaar Number is required">
 <input class="input3" type="number" name="aadhaar" placeholder="Your 12-Digit Aadhaar Number">
 <span class="focus-input3"></span>
-</div><br>
-<select class="selection-2" name="drawing_topic">
-	<option>Choose Your Topic</option>
-	<option>Save Animals</option>
-	<option>Save Nature</option>
-	<option>Festivals</option>
-	</select>
-<br>
+</div>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
 <input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID">
 <span class="focus-input3"></span>
@@ -136,7 +129,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbxh8UGL41MPzKJYggcQ2-xArOSBjxjdLGUY0X0S-HJCtkrAQ6F5MVlVlCQZQqT3trDpyg/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbzfB3QaP1q66o8lPXxXWkuZBAsl8WBIKItrz5BXe_jJZ5twPTxwccW_B7MdpT5_fWTH/exec', {
 				method: "POST",
 				body: data
 			})
