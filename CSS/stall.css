@@ -18,55 +18,103 @@ body
     background-attachment: fixed;
 }
 
-#cont_0
+.navbar-expand-lg
 {
-    display: block;
-    position: fixed;
-    z-index: 999;
-    min-width: 100%;  
+background-color: white;
+display: flex;
+justify-content: space-between;
 }
 
-.menu
-{  
-    height: 2cm;
-    background-color: #ffffff !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 1%;
+.navbar-expand-lg .navbar-brand img
+{
+height: 75px;
 }
 
-.logo img
+.vl 
 {
-    margin-left: 15%;
-    height: 75px;
+border-left: 3px solid #a53692;
+height: 40px;
+margin-top: 7px;
+margin: 5px 20px;
 }
 
-.menu a
+
+.navbar-expand-lg .container-fluid 
 {
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: x-large;
-    color: #a53692;
-    border: 5px  transparent;
-    border-radius: 10px;
-    transition: 0.6s ease;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 1%;
+height: 2cm;
 }
 
-.menu a:hover
+.navbar-light .navbar-nav .nav-link
 {
-    text-decoration: none;
-    padding: 5px 20px;
-    color: rgb(253, 240, 255);
-    background-color: #a53692;
-    transition: 0.5s ease;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
 }
 
-.vl
+.navbar-light .navbar-nav .nav-link:hover
 {
-    border-left: 3px solid #a53692;
-    height: 40px;
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 100px)
+{
+
+.navbar-expand-lg
+{
+background-color: white;
+
+}
+
+.navbar-expand-lg .navbar-collapse
+{    
+background-color: #f6c9fa;   
+padding-left: 4%;
+padding-left: 5%;
+}
+
+.vl 
+{
+display: none;
+}
+
+
+.navbar-light .navbar-nav .nav-link
+{
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
+}  
+
+
+
+
+}
+
 
 .bg
 {
@@ -231,3 +279,169 @@ margin-bottom: 2%;
     margin-left: 0%; 
 }
 
+@media only screen and (max-width: 768px) and (min-width: 100px)
+{
+    .bg
+{
+    background-color: rgb(255, 255, 255);
+    margin-top: 15%;
+    width: 90%; 
+    margin-left: 5%;
+}
+
+#cont_1
+{
+    max-width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0%;
+    display: block;
+    justify-content: space-between;
+}
+
+#cont_1 .left img
+{
+    height: 250px;
+    width: 90%;
+    margin: 5% 5%;
+}
+
+
+
+#cont_1 .right .calendar
+{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+#cont_1 .right .time
+{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+#cont_1 .right .location
+{
+    display: flex;
+}
+
+#cont_1 .right .name
+{
+    width: 60%;
+    
+    margin-bottom: 2%;
+}
+
+#cont_1 .right .name h2
+{
+    font-size: 26px;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#cont_1 .right button
+{
+    background-color: darkmagenta;
+    border: 0;
+    margin: 4% 10% 4% 5%;
+    width: fit-content;
+    height: 120px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 24px;
+}
+
+#cont_1 .right button:hover
+{
+    background-color: rgb(173, 0, 173);
+    height: 66px;
+    width: 100%;   
+    transition: 0.5s ease-in-out; 
+}
+
+#stall_type
+{
+    max-width: 100%;
+    display: block;
+    justify-content: space-between;
+    margin: 4% 0%;
+}
+
+#stall_type .diamond
+{
+    max-width: 80%;
+    margin-left: 10%;
+    display: block;
+    text-align: center;
+    padding: 5%;
+    background-color: goldenrod;
+    border-radius: 20px 0px;
+    margin-top: 5%;
+}
+
+
+#stall_type .diamond .diamond_cont
+{
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0%;
+}
+
+
+
+#stall_type .diamond  .left
+{
+    display: block;
+    text-align: center;
+
+    
+}
+
+#stall_type .golden
+{
+    max-width: 80%;
+    display: block;
+    text-align: center;
+    padding: 5%;
+    background-color: silver;
+    border-radius: 20px 0px;
+    margin-top: 5%;
+}
+
+
+#stall_type .golden .golden_cont
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0%;
+}
+
+#stall_type .golden  .left
+{
+    display: block;
+    text-align: center;
+   
+}
+
+#foter
+{
+    max-width: 100%;
+    display: block;
+    justify-content: space-between;
+}
+
+.categories
+{
+    max-width: 100%;
+    margin: 2% 20%;
+}
+
+.categories h5
+{
+    margin-left: 0%; 
+}    
+}

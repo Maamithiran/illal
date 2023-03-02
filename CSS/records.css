@@ -66,7 +66,7 @@ background-color: #a53692;
 transition: 0.5s ease;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 100px)
+@media only screen and (max-width: 768px) and (min-width: 100px)
 {
 
 .navbar-expand-lg
@@ -117,7 +117,7 @@ transition: 0.5s ease;
 h1
 {
     font-family: 'Oswald', sans-serif;
-    margin-top: 20%;
+    margin-top: 7%;
     text-align: center;
     color: #d9ff00;
 }
@@ -138,7 +138,7 @@ h1
 
 #page #yoga_record h1
 {
-    padding-top: 3%;
+    padding-top: 02%;
     color: #818181;
     padding-bottom: 2%;
 }
@@ -158,9 +158,10 @@ hr
 
 #music_marathon
 {
-    max-width: 90%;
-    margin: 3% 5% 0% 5%;
-    display: block;
+    max-width: 70%;
+    margin: 3% 15% 0% 15%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #music_heading h1
@@ -286,3 +287,143 @@ h2
 
 
 
+
+
+@media only screen and (max-width: 768px) and (min-width: 100px)
+{
+    h1
+{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 18%;
+    text-align: center;
+    color: #d9ff00;
+}
+    #music_marathon
+{
+    max-width: 70%;
+    margin: 3% 15% 0% 15%;
+    display: block;
+}
+
+#music_heading h1
+{
+    padding-top: 2%;
+    text-align: center;
+    color: #818181;;
+}
+
+#music_marathon .left
+{
+    max-width: 100%;
+    margin-left: 0%;
+    display: block;
+    text-align: center;
+}
+
+.left #num
+{
+    text-align: center;
+    color: #ff00d4;
+    font-size: 50px ;
+}
+
+.left #by
+{
+    color: #ae00ff;
+    font-size: 80px;
+    padding: 0;
+}
+
+.left #ladies
+{
+    color: #ff00d4;
+    font-size: 50px;
+}
+
+#music_marathon .right
+{
+    max-width: 100%;
+    margin-top: 15%;
+}
+
+#music_marathon .right img
+{
+    width: 100%;
+    height: 300px;
+}
+
+h2
+{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    font-family: 'Oswald', sans-serif;;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #ae00ff;
+}
+
+#join 
+{
+    position: relative;
+}
+
+#join button
+{
+    margin: 25% 0% 5% 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
+    border: 0px;
+    border-radius: 10px;
+    height: auto;
+    color:#ffffff;
+    background-color: #a53692;  
+    font-family: 'Oswald', sans-serif;;
+    padding: 15px;
+}
+
+#foot h2
+{
+    margin: 35% 0% 0% 0%;
+    padding-bottom: 0%;
+}
+
+#singers
+{
+    margin: 3% 5% 0% 5%;
+}
+
+#singers .row .col-sm-3 img
+{
+    width: 100%;
+    border: 5px solid #494949;
+}
+
+#singers .row .col-sm-3 button
+{
+    border: 0;
+    width: 100%;
+    background-color: #494949;
+    color:#ffffff;
+    height: 40px;
+}
+
+#singers .row .col-sm-3 img:hover
+{
+    width: 105%;
+    border: 8px solid #353535;
+}
+
+#singers .row .col-sm-3 button:hover
+{
+    border: 0;
+    width: 105%;
+    background-color: #353535;
+    color:#ffffff;
+    height: 40px;
+}
+
+}

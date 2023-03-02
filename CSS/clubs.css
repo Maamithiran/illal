@@ -16,55 +16,103 @@ body
     background-attachment: fixed;
 }
 
-#cont_0
+.navbar-expand-lg
 {
-    display: block;
-    position: fixed;
-    z-index: 999;
-    min-width: 100%;  
+background-color: white;
+display: flex;
+justify-content: space-between;
 }
 
-.menu
-{  
-    height: 2cm;
-    background-color: #ffffff !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 1%;
+.navbar-expand-lg .navbar-brand img
+{
+height: 75px;
 }
 
-.logo img
+.vl 
 {
-    margin-left: 15%;
-    height: 75px;
+border-left: 3px solid #a53692;
+height: 40px;
+margin-top: 7px;
+margin: 5px 20px;
 }
 
-.menu a
+
+.navbar-expand-lg .container-fluid 
 {
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: x-large;
-    color: #a53692;
-    border: 5px  transparent;
-    border-radius: 10px;
-    transition: 0.6s ease;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 1%;
+height: 2cm;
 }
 
-a:hover
+.navbar-light .navbar-nav .nav-link
 {
-    text-decoration: none;
-    padding: 5px 20px;
-    color: rgb(253, 240, 255);
-    background-color: #a53692;
-    transition: 0.5s ease;
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
 }
 
-.vl
+.navbar-light .navbar-nav .nav-link:hover
 {
-    border-left: 3px solid #a53692;
-    height: 40px;
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 100px)
+{
+
+.navbar-expand-lg
+{
+background-color: white;
+
+}
+
+.navbar-expand-lg .navbar-collapse
+{    
+background-color: #f6c9fa;   
+padding-left: 4%;
+padding-left: 5%;
+}
+
+.vl 
+{
+display: none;
+}
+
+
+.navbar-light .navbar-nav .nav-link
+{
+text-decoration: none;
+font-family: 'Oswald', sans-serif;
+font-size: x-large;
+color: #a53692;
+border: 5px  transparent;
+border-radius: 10px;
+transition: 0.6s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover
+{
+text-decoration: none;
+padding: 5px 25px;
+color: rgb(253, 240, 255);
+background-color: #a53692;
+transition: 0.5s ease;
+}  
+
+
+
+
+}
+
 
 #heading
 {
@@ -163,4 +211,114 @@ a:hover
     height: 66px;
     transition: 0.5s ease-in-out;
     background-color: #cf00ad;
+}
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 100px)
+{
+    #heading
+{
+    color: rgb(231, 231, 0);
+    text-align: center;
+    font-size: 50pt;
+    padding-top: 15%;
+    font-family: 'Oswald', sans-serif;
+}
+
+#club
+{
+    max-width: 100%;
+    display: block;
+    
+    margin: 3% 5% 0% 5%;
+}
+
+#club h3
+{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#club .cycling_club
+{
+    max-width: 100%;
+    height: 70px;
+}
+
+#club .cycling_club img
+{
+    border: 8px solid #ffffff;
+    border-radius: 20px;
+
+}
+
+#club .services_club
+{
+    max-width: 100%;
+    height: 70px;
+    margin-top: 100%;
+}
+
+#club .services_club img
+{
+    border: 8px solid #ffffff;
+    border-radius: 20px;
+}
+
+#club .tour_club
+{
+    max-width: 100%;
+    height: 70px;
+    margin-top: 100%;
+}
+
+#club .tour_club img
+{
+    border: 8px solid #ffffff;
+    border-radius: 20px;
+}
+
+#club .recreation_club
+{
+    max-width: 100%;
+    height: 70px;
+    margin-top: 100%;
+}
+
+#club .recreation_club img
+{
+    border: 8px solid #ffffff;
+    border-radius: 20px;
+}
+
+#regn_button
+{
+    width: 70%;
+    margin: 15% 15% 5% 15%;
+    margin-top: 100%;
+    
+}
+
+#regn_button button
+{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    background-color: #ff00d4;
+    font-size: x-large;
+}
+
+#regn_button button:hover
+{
+    width: 100%;
+    height: 66px;
+    transition: 0.5s ease-in-out;
+    background-color: #cf00ad;
+}
 }
