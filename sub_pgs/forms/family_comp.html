@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Talentina Competition-Registration Form</title>
+<title>Illal Family Competition-Registration Form</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,11 +35,11 @@
 <div class="wrap-contact3">
 <form class="contact3-form validate-form">
 <span class="contact3-form-title">
-Talentina Competition Registration Form
+    Illal Family Competition-Registration Form
 </span>
 
-<div class="wrap-input3 validate-input" data-validate="Name is required">
-<input class="input3" type="text" name="name" placeholder="Your Name">
+<div class="wrap-input3 validate-input" data-validate="Name of the Team Leader is required">
+<input class="input3" type="text" name="tlname" placeholder="Enter your TL Name(Ladies)">
 <span class="focus-input3"></span>
 </div>
 <div class="wrap-input3 validate-input" data-validate="Valid Birthdate is required">
@@ -54,26 +54,49 @@ Talentina Competition Registration Form
 <input class="input3" type="number" name="phone" placeholder="Your Phone Number">
 <span class="focus-input3"></span>
 </div>
-<div class="wrap-input3 validate-input" data-validate="Alternate Phone Number is required">
-<input class="input3" type="number" name="phone1" placeholder="Alternate Phone Number">
+<div class="wrap-input3 validate-input" data-validate="Aadhaar Number is required">
+<input class="input3" type="number" name="aadhaar" placeholder="12-Digit Aadhaar Number of Team Leader">
 <span class="focus-input3"></span>
 </div>
-<div class="wrap-input3 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-<input class="input3" type="text" name="email" placeholder="Your Email">
+<div class="wrap-input3 validate-input" data-validate="Profession Name is required">
+<input class="input3" type="text" name="schl" placeholder="Your Profession">
 <span class="focus-input3"></span>
 </div>
 <div class="wrap-input3 validate-input" data-validate="Address is required">
 <textarea class="input3" name="address" placeholder="Your Address"></textarea>
 <span class="focus-input3"></span>
 </div>
-<div class="wrap-input3 validate-input" data-validate="Aadhaar Number is required">
-<input class="input3" type="number" name="aadhaar" placeholder="Your 12-Digit Aadhaar Number">
+
+<div class="wrap-input3 validate-input" data-validate="Name of the Family Mate 1 is required">
+<input class="input3" type="text" name="tlname1" placeholder="Enter your Family Mate 1 Name">
 <span class="focus-input3"></span>
 </div>
-<div class="wrap-input3 validate-input" data-validate="Talentina Section is required">
-<input class="input3" type="text" name="talent" placeholder="Mention Your Performance">
+
+<div class="wrap-input3 validate-input" data-validate="Your Age is required">
+<input class="input3" type="number" name="age1" placeholder="Familymate1's Age">
 <span class="focus-input3"></span>
 </div>
+
+<div class="wrap-input3 validate-input" data-validate="Name of the Family Mate 2 is required">
+<input class="input3" type="text" name="tlname2" placeholder="Enter your Family Mate 2 Name">
+<span class="focus-input3"></span>
+</div>
+
+<div class="wrap-input3 validate-input" data-validate="Your Age is required">
+<input class="input3" type="number" name="age2" placeholder="Family Mate 2's Age">
+<span class="focus-input3"></span>
+</div>
+
+<div class="wrap-input3 validate-input" data-validate="Name of the Family Mate 3 is required">
+<input class="input3" type="text" name="tlname3" placeholder="Enter your Family Mate 3 Name">
+<span class="focus-input3"></span>
+</div>
+
+<div class="wrap-input3 validate-input" data-validate="Your Age is required">
+<input class="input3" type="number" name="age3" placeholder="Family Mate 3's Age">
+<span class="focus-input3"></span>
+</div>
+
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
 <input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID">
 <span class="focus-input3"></span>
@@ -133,7 +156,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbzKGda2RxPtML1elEj3z8lqz2H__F0biPp35ICs35gEwkZlsWgO8jFpZsJaSV8D2JtnZw/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbwMrSXeCLIxoAODbAaS2ELA9gZel08aTY6-nCk1cP3h3DfFKrbW11X43z06G0u9r_1H/exec', {
 				method: "POST",
 				body: data
 			})

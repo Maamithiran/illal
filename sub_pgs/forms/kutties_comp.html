@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Talentina Competition-Registration Form</title>
+<title>Illal Kutties Competition-Registration Form</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +35,7 @@
 <div class="wrap-contact3">
 <form class="contact3-form validate-form">
 <span class="contact3-form-title">
-Talentina Competition Registration Form
+    Illal Kutties Competition-Registration Form
 </span>
 
 <div class="wrap-input3 validate-input" data-validate="Name is required">
@@ -62,16 +62,16 @@ Talentina Competition Registration Form
 <input class="input3" type="text" name="email" placeholder="Your Email">
 <span class="focus-input3"></span>
 </div>
+<div class="wrap-input3 validate-input" data-validate="Valid School Name is required">
+<input class="input3" type="text" name="schl" placeholder="Your School Studying">
+<span class="focus-input3"></span>
+</div>
 <div class="wrap-input3 validate-input" data-validate="Address is required">
 <textarea class="input3" name="address" placeholder="Your Address"></textarea>
 <span class="focus-input3"></span>
 </div>
 <div class="wrap-input3 validate-input" data-validate="Aadhaar Number is required">
 <input class="input3" type="number" name="aadhaar" placeholder="Your 12-Digit Aadhaar Number">
-<span class="focus-input3"></span>
-</div>
-<div class="wrap-input3 validate-input" data-validate="Talentina Section is required">
-<input class="input3" type="text" name="talent" placeholder="Mention Your Performance">
 <span class="focus-input3"></span>
 </div>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
@@ -133,7 +133,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbzKGda2RxPtML1elEj3z8lqz2H__F0biPp35ICs35gEwkZlsWgO8jFpZsJaSV8D2JtnZw/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbzlhr4yhttJWRSbDbg5XCdC4UUtGEx4SG3uKqSL0FPRi__vsVkOLgsHLtkQaV7rSODX/exec', {
 				method: "POST",
 				body: data
 			})
