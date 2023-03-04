@@ -496,8 +496,8 @@ transition: 0.5s ease;
     {
         border: 0;
         height: 60px;
-        width: 50%;
-        margin: 5% 25%;
+        width: 60%;
+        margin: 5% 20%;
         font-size: 24px;
         background-color: #a53692;
         border-radius: 10px;
@@ -505,9 +505,9 @@ transition: 0.5s ease;
     
      #bg .btn button:hover
     {
-        width: 32%;
-        height: 66px;
-        font-size: 28px;
+        width: 61%;
+        height: 62px;
+        font-size: 25px;
         transition: 0.5s ease-in-out;
     }
     

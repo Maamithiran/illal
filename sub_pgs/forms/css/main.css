@@ -171,6 +171,12 @@ iframe {
     padding-bottom: 70px
 }
 
+@media(max-width: 768px) {
+    .contact3-form-title
+    {
+        font-size: 35px;
+    }
+}
 .wrap-input3 {
     width: 100%;
     position: relative;

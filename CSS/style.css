@@ -69,7 +69,7 @@ background-color: #a53692;
 transition: 0.5s ease;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 100px)
+@media only screen and (max-width: 768px) and (min-width: 100px)
 {
 
 .navbar-expand-lg
@@ -524,8 +524,8 @@ padding-top: 0%;
 
 #sponsorship button:hover
 {
-    height: 60px;
-    width: 24%;
+    height: 54px;
+    width: 21%;
     color:#313131;
     background-color: #7e7e7e;
     transition: 0.75s ease-in-out;
@@ -781,12 +781,12 @@ padding-top: 0%;
     height: 450px;
     width: 60%;
     margin: 15% 0% 0% 0%;
-    padding: 0 10px;
+    padding: 0px 15px 0px 10px;
 }
 
 #coming_soon h1
 {
-    font-size: 40pt;
+    font-size: 35pt;
     font-weight: bolder;
     padding-top: 5%;
 }
@@ -802,6 +802,7 @@ padding-top: 0%;
 {
     width: 180px;
     height: 180px;
+    padding: 20px;
 }
 
 .varthagi #varthagi-logo
@@ -989,7 +990,7 @@ padding-bottom: 5%;
 #sponsorship button:hover
 {
     height: 60px;
-    width: 24%;
+    width: 42%;
     color:#313131;
     background-color: #7e7e7e;
     transition: 0.75s ease-in-out;
