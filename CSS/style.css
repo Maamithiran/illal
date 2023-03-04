@@ -669,12 +669,41 @@ padding-top: 0%;
     height: 200px;
 }
 
+.right_cont .bday .chithirai_btn
+{
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    height:fit-content;
+    width: 90%;
+    margin: 2% 5% 10% 5%;
+}
+
+.right_cont .bday .chithirai_btn button
+{
+    font-size: small;
+    border: 4px double;
+    background-color: #f8e1ad;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.right_cont .bday .chithirai_btn button:hover
+{
+    border: 4px double;
+    background-color: #ffd87e;
+    padding: 11px 10px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+
 .carousel
 {
     max-width: 100%;
     min-height: 200px;
     max-height: 200px;
-    margin: 5% 5% 5% 0%;
+    margin: 20% 5% 5% 0%;
 }
 
 .carousel-inner img {
