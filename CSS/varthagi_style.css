@@ -204,6 +204,18 @@ transition: 0.5s ease;
     text-align: justify;
 }
 
+#about_us .about_text .thiru 
+{
+    margin-top: 15%;
+}
+
+#about_us .about_text .thiru h4
+{
+    border: 1px solid #720000;
+    padding: 20px;
+    border-radius: 15px 0px 15px 0px;
+}
+
 #about_us .about_text button
 {
     margin: 4% 0% 0% 30%;
@@ -460,6 +472,20 @@ transition: 0.5s ease;
     margin: 5% 0% 0% 5%;
     display: block;
     text-align: justify;
+}
+
+#about_us .about_text .thiru 
+{
+    margin-top: 15%;
+}
+
+#about_us .about_text .thiru h4
+{
+    border: 1px solid #720000;
+    padding: 20px 5px;
+    border-radius: 15px 0px 15px 0px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 #about_us .about_text button
