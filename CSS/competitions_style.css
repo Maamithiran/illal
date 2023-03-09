@@ -232,6 +232,20 @@ transition: 0.5s ease;
     transition: 0.5s ease-in-out;
 }
 
+.comp_cont  h6
+{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(102, 102, 102);
+    text-align: center;
+}
+
+.comp_cont .regn h6
+{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(102, 102, 102);
+    text-align: center;
+}
+
 .comp
 {
     padding: 5% 0% 0% 0%;
