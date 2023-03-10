@@ -193,7 +193,7 @@ transition: 0.5s ease;
     color: #747272;
     font-family: 'Noto Sans Tamil', sans-serif;
     letter-spacing: 2px;
-   
+   text-align: left;
 }
 
 .comp_head h6:hover
@@ -227,7 +227,7 @@ transition: 0.5s ease;
 {
     width: 90%;
     margin: 3% 5%;
-    display: flex;
+    display: block;
     justify-content: space-between;
 }
 .comp_cont .regn #btn
@@ -396,6 +396,7 @@ ul
     line-height: 175%;
     font-family: 'Open Sans', sans-serif;
     color:rgb(102, 102, 102);
+    text-align: left;
 }
 
 #comp_rules h2
@@ -458,6 +459,21 @@ ul
 }
 
 .comp_head h4:hover
+{
+    color: #5c5c5c;
+    font-size: 19pt;
+    transition: 0.5s ease;
+}
+
+.comp_head h6
+{
+    color: #747272;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    letter-spacing: 2px;
+   text-align: left;
+}
+
+.comp_head h6:hover
 {
     color: #5c5c5c;
     font-size: 19pt;
