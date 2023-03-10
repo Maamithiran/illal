@@ -188,6 +188,21 @@ transition: 0.5s ease;
     transition: 0.5s ease;
 }
 
+.comp_head h6
+{
+    color: #747272;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    letter-spacing: 2px;
+   
+}
+
+.comp_head h6:hover
+{
+    color: #5c5c5c;
+    font-size: 19pt;
+    transition: 0.5s ease;
+}
+
 .comp_cont
 {
     max-width: 90%;
