@@ -230,14 +230,21 @@ transition: 0.5s ease;
     display: block;
     justify-content: space-between;
 }
+
 .comp_cont .regn #btn
 {
     border: 0;
     border-radius: 10px;
-    color: grey;
+    color: rgb(255, 255, 255);
+    background-color: #1b1b1b;
     padding: 5px;
     margin-right: 4%;
     margin-top: 4%;
+}
+
+.comp_cont .regn #btn h4
+{
+    color: white;
 }
 
 .comp_cont .regn #btn:hover
