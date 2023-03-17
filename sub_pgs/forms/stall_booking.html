@@ -79,14 +79,13 @@
 </div><br>
 <select class="selection-2" name="drawing_topic">
 	<option>Choose Your Payment Option</option>
-	<option>Gpay</option>
 	<option>Phonepe</option>
+	<option>Gpay</option>
 	<option>PayTM</option>
-	<option>Others</option>
 	</select>
 <br>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
-<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID">
+<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
 <span class="focus-input3"></span>
 </div>
 <div class="container-contact3-form-btn">
@@ -146,7 +145,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submitting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbx6KD-tS-4K4O96QpH4UIVEzljVMqn66yMN_FR1ixY419H9pfghatnqkHc9oiL9dqXhJg/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbw8TElAQ_GHxa-Sv1peRYE6ZhZXP1-MoJSapjvafvthANzxBuF0zGj7xSqYfH7GeWuJFg/exec', {
 				method: "POST",
 				body: data
 			})

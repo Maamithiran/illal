@@ -70,8 +70,16 @@ Folk Dance Competition Registration Form
 <input class="input3" type="number" name="aadhaar" placeholder="Your 12-Digit Aadhaar Number">
 <span class="focus-input3"></span>
 </div>
+<br>
+<select class="selection-2" name="drawing_topic">
+	<option>Choose Your Payment Option</option>
+	<option>Phonepe</option>
+	<option>Gpay</option>
+	<option>PayTM</option>
+	</select>
+<br>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
-<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID">
+<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
 <span class="focus-input3"></span>
 </div>
 <div class="container-contact3-form-btn">
@@ -129,7 +137,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbzfB3QaP1q66o8lPXxXWkuZBAsl8WBIKItrz5BXe_jJZ5twPTxwccW_B7MdpT5_fWTH/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbw4i32_pmk2NcDmYp_SIUaYm1dR-80P8eHRX80yVyns1xlwo6cQmotLCvPAEsWLHYrn/exec', {
 				method: "POST",
 				body: data
 			})

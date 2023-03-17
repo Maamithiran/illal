@@ -74,6 +74,18 @@ Talentina Competition Registration Form
 <input class="input3" type="text" name="talent" placeholder="Mention Your Performance">
 <span class="focus-input3"></span>
 </div>
+<br>
+<select class="selection-2" name="drawing_topic">
+	<option>Choose Your Payment Option</option>
+	<option>Phonepe</option>
+	<option>Gpay</option>
+	<option>PayTM</option>
+	</select>
+<br>
+<div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
+<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
+<span class="focus-input3"></span>
+</div>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
 <input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID">
 <span class="focus-input3"></span>
@@ -133,7 +145,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbzKGda2RxPtML1elEj3z8lqz2H__F0biPp35ICs35gEwkZlsWgO8jFpZsJaSV8D2JtnZw/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbzzsvsIbk5TtK-bhE_a8n0mzPcXYX13k-ktNFv438nMv974nAU81rG4FPU4Ve0e9HqNKg/exec', {
 				method: "POST",
 				body: data
 			})

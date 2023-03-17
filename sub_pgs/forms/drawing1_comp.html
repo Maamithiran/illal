@@ -77,8 +77,16 @@ Drawing Competition Registration Form
 	
 	</select>
 <br>
+<br>
+<select class="selection-2" name="drawing_topic1">
+	<option>Choose Your Payment Option</option>
+	<option>Phonepe</option>
+	<option>Gpay</option>
+	<option>PayTM</option>
+	</select>
+<br>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
-<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID">
+<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
 <span class="focus-input3"></span>
 </div>
 <div class="container-contact3-form-btn">
@@ -136,7 +144,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbx_t96kUWJbK9j-AO2vwMZjwdZkFFVPVAtB-DhbwBN1gJmptjSof75V0gmAW5Y57yry6Q/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbz68jloHXs_1KNqMn3KDbP2MHsA_C0BJZb0n3qgFUdo8WdmoFpwJEMW5mgfmKiXIkr6Rg/exec', {
 				method: "POST",
 				body: data
 			})

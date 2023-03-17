@@ -75,8 +75,16 @@
 <input class="input3" type="text" name="purpose" placeholder="Your Purpose of Sponsoring">
 <span class="focus-input3"></span>
 </div>
+<br>
+<select class="selection-2" name="drawing_topic">
+	<option>Choose Your Payment Option</option>
+	<option>Phonepe</option>
+	<option>Gpay</option>
+	<option>PayTM</option>
+	</select>
+<br>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
-<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID">
+<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
 <span class="focus-input3"></span>
 </div>
 <div class="container-contact3-form-btn">
@@ -135,7 +143,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbzw0F9L0ttlXeTMFrhYy3ppRz_-z5TaKDrE3QNq-DvgO6oqGC2sQuP2Q03Q9Xk1cpqP/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbwl3Rq59n9hDY1mulfO1HeMTcKc9L2_8xm-CVbhxreaD3-9uDF8Ycs9y3I_BCMKq8eR/exec', {
 				method: "POST",
 				body: data
 			})
