@@ -88,7 +88,7 @@
 	</select>
 <br>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
-<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
+<input class="input3" type="text" name="txn_id" onkeyup="enable()" id = "txnid" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
 <span class="focus-input3"></span>
 </div>
 <div class="container-contact3-form-btn">
@@ -120,29 +120,25 @@ Submit
 		function enable(){
             var check = document.getElementById("chk");
             var btn = document.getElementById("sub");
-            if(check.checked){
+            
+            //var empt = document.getElementById("txnid");
+            if (document.getElementById("txnid").value==="")
+            {
+                btn.disabled="true";
+            }
+            else
+            {
+            if(check.checked)
+            {
                 btn.removeAttribute("disabled")
             }
             else{
                 btn.disabled="true";
             }
+          }
         }
 	</script>
 
-    //<script>
-     //   function required()
-     //   {
-      //      var empt = document.forms["formID"]["txn_id"].value;
-        //    if (empt == "")
-      //      {
-        //        alert("enter txn_id");
-        //    }
-        //    else
-        //    {
-        //        alert("txn is entered")
-        //    }
-       // }
-       // </script>
 
 <script src="js/main.js"></script>
 
@@ -162,7 +158,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbwl3Rq59n9hDY1mulfO1HeMTcKc9L2_8xm-CVbhxreaD3-9uDF8Ycs9y3I_BCMKq8eR/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbyrS3aIFgTT_urG9qhFO83CudpHmD-WpXi1pVr4CU_IE0Tacl143HuJAB8-lr0vw7OU/exec', {
 				method: "POST",
 				body: data
 			})

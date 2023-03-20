@@ -85,15 +85,14 @@
 	</select>
 <br>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
-<input class="input3" type="text" name="txn_id" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
+<input class="input3" type="text" name="txn_id" onkeyup="enable()" id = "txnid" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
 <span class="focus-input3"></span>
 </div>
 <div class="container-contact3-form-btn">
-<input type="checkbox" name="agree" id="chk" onclick="enable()" value="yes"><p style="color: #ffffff;">Illal Membership is Mandatory<br>Booking Fees are not refundable at any cost.<br>(By checking this you had agreed our Terms and Conditions).*</p><br><br>
-<button onclick="showAlert()"disabled="true" class="contact3-form-btn" id="sub" value="Submit">
+	<input type="checkbox" name="agree" id="chk" onclick="enable()" value="yes">Check this box to Agree our Terms and Conditions<br><br>
+<button onclick="showAlert()" disabled="true" class="contact3-form-btn" id="sub" value="Submit">
 Submit
 </button>
-
 </div>
 </form>
 </div>
@@ -118,12 +117,22 @@ Submit
 		function enable(){
             var check = document.getElementById("chk");
             var btn = document.getElementById("sub");
-            if(check.checked){
+            
+            //var empt = document.getElementById("txnid");
+            if (document.getElementById("txnid").value==="")
+            {
+                btn.disabled="true";
+            }
+            else
+            {
+            if(check.checked)
+            {
                 btn.removeAttribute("disabled")
             }
             else{
                 btn.disabled="true";
             }
+          }
         }
 	</script>
 
