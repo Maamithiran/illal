@@ -224,7 +224,7 @@ transition: 0.5s ease;
 .right_cont .bday .chithirai_btn button
 {
     border: 4px double;
-    background-color: #f8e1ad;
+    background-color: #db67ff;
     padding: 10px 5px;
     border-radius: 10px;
 }
@@ -683,7 +683,7 @@ padding-top: 0%;
 {
     font-size: small;
     border: 4px double;
-    background-color: #f8e1ad;
+    background-color: #db67ff;
     padding: 10px 5px;
     border-radius: 10px;
 }
