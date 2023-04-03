@@ -59,9 +59,22 @@
 </div>
 
 <div class="wrap-input3 validate-input" data-validate="No. Of is required">
-<input class="input3" type="number" name="ticket" placeholder="No. Of Tickets">
+<input class="input3" type="number" name="ticket" placeholder="No. Of Tickets for Kids(Rs.300/kid)">
 <span class="focus-input3"></span>
 </div>
+
+<div class="wrap-input3 validate-input" data-validate="No. Of is required">
+<input class="input3" type="number" name="ticket1" placeholder="No. Of Tickets for Adults(Rs.500/kid)">
+<span class="focus-input3"></span>
+</div>
+<br>
+<select class="selection-2" name="drawing_topic">
+	<option>Choose Your Payment Option</option>
+	<option>Phonepe(7904153072)</option>
+	<option>Gpay(7904153072)</option>
+	<option>PayTM(7904153072)</option>
+	</select>
+<br>
 
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
 <input class="input3" type="text" name="txn_id" onkeyup="enable()" id = "txnid" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
@@ -133,7 +146,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbznlKESLHdaRwPUgMVFiIbVG9uurklmWTbTvgGDR_Yyp_GCt9dvYgbO1AcdHxXpXQIC/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbwkKWePpoiPEoa_p3o0gzh4oF7Ch4rzHZv95SUCb1cvvD0MCUuGt1W5wSeckbrJfs6t/exec', {
 				method: "POST",
 				body: data
 			})

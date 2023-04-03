@@ -59,9 +59,18 @@
 </div>
 
 <div class="wrap-input3 validate-input" data-validate="No. Of is required">
-<input class="input3" type="number" name="ticket" placeholder="No. Of Tickets">
+<input class="input3" type="number" name="ticket" placeholder="No. Of Tickets(Rs.100/Ticket)">
 <span class="focus-input3"></span>
 </div>
+
+<br>
+<select class="selection-2" name="drawing_topic">
+	<option>Choose Your Payment Option</option>
+	<option>Phonepe(7904153072)</option>
+	<option>Gpay(7904153072)</option>
+	<option>PayTM(7904153072)</option>
+	</select>
+<br>
 
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
 <input class="input3" type="text" name="txn_id" onkeyup="enable()" id = "txnid" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072)">
@@ -133,7 +142,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbwZWiqYO4Pu94dSKC_th_5iQLUXHF0tFvS9PAnVXvU2WxjwsKydpKj4TzV0JYVGxmiy/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbzjZP-PoimdkYwDtM1N9P7qFpDgwyik6cTD5DWn1xvm--ghc0Y8QamX_Q-6iHBgjULP/exec', {
 				method: "POST",
 				body: data
 			})

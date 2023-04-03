@@ -224,7 +224,7 @@ transition: 0.5s ease;
 .right_cont .bday .chithirai_btn button
 {
     border: 4px double;
-    background-color: #db67ff;
+    background-color: #fff;
     padding: 10px 5px;
     border-radius: 10px;
 }
@@ -252,6 +252,56 @@ transition: 0.5s ease;
     max-height: 300px;
     margin-left: 0%;
 }
+
+.dropbtn {
+    
+    margin-left: 27%;
+    width: 100%;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #fff;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    margin-left: 27%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #c927fa;}
+  .dropdown a:focus {background-color: #c927fa;}
+  
+  .show {display: block;}
+
+
+
+
+
 
 .cont_2
 {
@@ -683,7 +733,7 @@ padding-top: 0%;
 {
     font-size: small;
     border: 4px double;
-    background-color: #db67ff;
+    background-color: #fff;
     padding: 10px 5px;
     border-radius: 10px;
 }
