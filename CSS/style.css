@@ -7,6 +7,33 @@
 max-width: 100%;
 }
 
+.modal-content {
+    border-radius: 0;
+    border: none;
+    max-width : 450px;
+    margin : auto;
+  }
+  .modal-startup .modal-body {
+      padding: 0;
+  }
+  span.close-modal {
+    position : absolute;
+    right : 15px;
+    top : 15px;
+    background : #222;
+    color : #fff;
+    opacity : 1;
+    padding : 10px 10px 5px;
+    cursor : pointer;
+    z-index : 10;
+    border-radius : 50%;
+    line-height : 17.5px;
+  }
+  span.close-modal svg {
+    width : 12px;
+    height : 12px;
+  }
+
 body
 {
 width: 100%;
