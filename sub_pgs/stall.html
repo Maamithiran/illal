@@ -114,7 +114,9 @@
         <img src="../img/maps.png" style="height: 36px;margin-right: 20px;"><br><br>
         <h3>Trichy</h3>
         </div>
-        <a href="forms/stall_booking.html"><button>Contact Event Organizer for More Details</button></a>
+        <a href="forms/stall_booking.html" style="text-decoration: none;">
+        <h1 id="blink" style=" font-weight: bold; color: rgb(228, 0, 0); text-align: center; padding-top: 0%; text-decoration: none;">To Book Your Stall Click Here!</h1>
+        <button>Contact Event Organizer for More Details</button></a>
       </div>
     </div>
     <div id="stall_type">
@@ -174,5 +176,14 @@
     </div>
   </div>
   </div>
+  <script type="text/javascript">
+    var blink = 
+        document.getElementById('blink');
+
+    setInterval(function () {
+        blink.style.opacity = 
+        (blink.style.opacity == 0 ? 1 : 0);
+    }, 1000); 
+</script>
     </body>
 </html>
