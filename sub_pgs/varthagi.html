@@ -112,7 +112,7 @@
         </div>
         <div class="vl"></div>
         <div class="launch_dt">
-        <a><h5>LAUNCHING DATE:</h5><h6>01 May 2023</h6></a>
+        <a><h5>LAUNCHING DATE:</h5><h6>01 May 2023</h6><h5 id="blink">Coming Soon</h5></a>
         </div>
       </div>
       <hr>
@@ -198,5 +198,15 @@
 
     </div>
   </div>
+
+  <script type="text/javascript">
+    var blink = 
+        document.getElementById('blink');
+
+    setInterval(function () {
+        blink.style.opacity = 
+        (blink.style.opacity == 0 ? 1 : 0);
+    }, 1000); 
+</script>
   </body>
 </html>
