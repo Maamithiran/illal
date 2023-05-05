@@ -44,7 +44,7 @@
 <span class="focus-input3"></span>
 </div>
 <div class="wrap-input3 validate-input" data-validate="Valid Birthdate is required">
-<input class="input3" type="date" name="birthday" placeholder="Your Birthday">
+<input class="input3" type="text" name="birthday" placeholder="Your Birthday">
 <span class="focus-input3"></span>
 </div>
 <div class="wrap-input3 validate-input" data-validate="Your Profession is required">
@@ -80,16 +80,20 @@
 <input class="input3" type="number" name="aadhaar" placeholder="Your Aadhaar Number">
 <span class="focus-input3"></span>
 </div>
-<br>
-<select class="selection-2" name="drawing_topic">
-	<option>Illal's</option>
-	<option>Member</option>
-	<option>Not a Member</option>
-	</select>
-<br>
+
+
+
+	<p>Illal's</p><br>
+	<input type="radio" id="yes" name="membership" value="Member">
+  	<label for="yes"><p>Member</p></label>
+  	<input type="radio" id="no" name="membership" value="Not a Member">
+  	<label for="no"><p>Not a Member</p></label><br>
+
+
+	
 
 <div class="wrap-input3 validate-input" data-validate="Valid Membership Date is required">
-<input class="input3" type="date" name="membership_date" placeholder="Date of Membership">
+<input class="input3" type="text" name="membership_date" placeholder="Date of Membership">
 <span class="focus-input3"></span>
 </div>
 
@@ -156,7 +160,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbxkdzPHSFz3BHdPtkXdrijp6s0IOBYI4KY3S0mmiCRpVafGoWrimxei_0sBTNup1Hv2/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbyqkRi6AgRXktJTXTvTyshuk_I__v0crCbCnigt_L-XwA5k7xALu4gS8_i8XxHbriaw/exec', {
 				method: "POST",
 				body: data
 			})
