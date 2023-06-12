@@ -37,8 +37,8 @@ max-width: 100%;
 body
 {
 width: 100%;
-background-image: url("../img/bg7.jpg");
-/*background-color: #510079;*/
+/*background-image: url("../img/bg7.jpg");*/
+background-color: #ebc2ff;
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
