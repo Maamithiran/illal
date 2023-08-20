@@ -515,6 +515,11 @@ transition: 0.5s ease;
     margin: 7% 0% 0% 6%;
 }
 
+#donation audio
+{
+    
+}
+
 #donation img
 {
     height: 35%;
@@ -975,6 +980,11 @@ padding-top: 0%;
     background-color: #3a054d;
     border-radius: 10%;
     margin: 10% 5% 0% 5%;
+}
+
+#donation audio
+{
+    
 }
 
 #donation img
