@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Yoga Workshop Registration Form</title>
+<title>Freedom Health - Registration Form </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,7 +36,7 @@
 <div class="wrap-contact3">
 <form class="contact3-form validate-form">
 <span class="contact3-form-title">
-    Yoga Workshop Registration Form
+    Freedom Health - Registration Form
 </span>
 
 <div class="wrap-input3 validate-input" data-validate="Name is required">
@@ -44,10 +44,11 @@
 <span class="focus-input3"></span>
 </div>
 
-<div class="wrap-input3 validate-input" data-validate="Address is required">
-<textarea class="input3" name="address" placeholder="Your Address"></textarea>
-<span class="focus-input3"></span>
-</div>
+<div class="wrap-input3 validate-input" data-validate="Age is required">
+	<input class="input3" type="number" name="age" placeholder="Your Age">
+	<span class="focus-input3"></span>
+	</div>
+
 <div class="wrap-input3 validate-input" data-validate="Phone Number is required">
 <input class="input3" type="number" name="phone" placeholder="Your Phone Number">
 <span class="focus-input3"></span>
@@ -56,9 +57,14 @@
 <input class="input3" type="number" name="phone1" placeholder="Whatsapp Number">
 <span class="focus-input3"></span>
 </div>
+
+<div class="wrap-input3 validate-input" data-validate="Address is required">
+	<input class="input3" type="text" name="addr" placeholder="Your Address">
+	<span class="focus-input3"></span>
+	</div>
 <br>
 <div class="wrap-input3 validate-input" data-validate="Transaction ID is required">
-<input class="input3" type="text" name="txn_id" onkeyup="enable()" id = "txnid" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072) Rs.399">
+<input class="input3" type="text" name="txn_id" onkeyup="enable()" id = "txnid" placeholder="Enter Your Transaction ID Phonepe/Gpay/PayTM(7904153072) Rs.500(For Service Activity)">
 <span class="focus-input3"></span>
 </div>
 <div class="container-contact3-form-btn">
@@ -93,6 +99,7 @@ Submit
             if(check.checked)
             {
                 btn.removeAttribute("disabled")
+				alert("Rules: \n1. Fifty(50) days of walk, starts from November 01 2023 and ends in December 25 2023.\n2. Three(3) Kilometers of walk and three(3) litres of water Per Day.\n3. Two referrals towards Illal.");
             }
             else{
                 btn.disabled="true";
@@ -119,7 +126,7 @@ Submit
 		e.preventDefault();
 		document.querySelector("#sub").value = "Submiting..";
 		let data = new FormData(form);
-		fetch('https://script.google.com/macros/s/AKfycbxlvEH7HUWvVxeja46tG0stJakHTa5cQahTq5HM2WAMVidbe-jMau70zUcD0zpwICkA/exec', {
+		fetch('https://script.google.com/macros/s/AKfycbzr7izts6S8i8z79uKC8WE8iFlX-LqOnoTU68XsKpD_aXyDv4JrIjeXosxI1MJxmz99/exec', {
 				method: "POST",
 				body: data
 			})
